@@ -1,4 +1,4 @@
 aws_region      = "us-east-1"
 instance_type   = "t2.micro"
 key_pair_name   = "my-key"
-allowed_ssh_cidr = "YOUR.PUBLIC.IP.ADDR/32"
+allowed_ssh_cidr = "47.220.216.177/32"
