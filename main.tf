@@ -31,12 +31,3 @@ resource "aws_security_group" "ec2_sg" {
     protocol    = "-1"
     cidr_blocks = ["0.0.0.0/0"]
   }
-}
-
-output "public_ip" {
-  value = aws_instance.my_ec2.public_ip
-}
-
-output "ssh_command" {
-  value = "ssh -i ${var.key_pair_name}.pem ec2-user@${aws_instance.my_ec2.public_ip}"
-}
